@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class CustomerServiceImpl implements CustomerService {
 
     @Autowired
-    private CustomerRepository customerRepository;
+    CustomerRepository customerRepository;
 
     @Override
     public List<Customers> findAll() {

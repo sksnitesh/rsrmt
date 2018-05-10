@@ -72,8 +72,8 @@ public class Customers implements Serializable {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumns({
-        @JoinColumn(name = "codePriceType", referencedColumnName = "codePriceType")})
-    private PropertyType codePriceType;
+        @JoinColumn(name = "codePropertyType", referencedColumnName = "codePropertyType")})
+    private PropertyType codePropertyType;
 
     public Long getCodeCustomer() {
         return codeCustomer;
@@ -171,12 +171,14 @@ public class Customers implements Serializable {
         this.codePriceRange = codePriceRange;
     }
 
-    public PropertyType getCodePriceType() {
-        return codePriceType;
+    public PropertyType getCodePropertyType() {
+        return codePropertyType;
     }
 
-    public void setCodePriceType(PropertyType codePriceType) {
-        this.codePriceType = codePriceType;
+    public void setCodePropertyType(PropertyType codePropertyType) {
+        this.codePropertyType = codePropertyType;
     }
+
+    
 
 }

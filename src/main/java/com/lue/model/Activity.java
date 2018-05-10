@@ -40,7 +40,7 @@ public class Activity implements Serializable {
     
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumns({
-    @JoinColumn(name = "codeAgent", referencedColumnName = "codeAgent")})
+    @JoinColumn(name = "codeCustomer", referencedColumnName = "codeCustomer")})
     private Customers codesCutomer;
   
     @ManyToOne(fetch = FetchType.LAZY)
